@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import sklearn
 from sklearn.datasets import load_iris
-with open('model_iris.pkl', 'rb') as f:
+with open('model_iris.pkl_v2', 'rb') as f:
     model = pickle.load(f)
 test=np.array([[5.1, 3.5, 1.4, 0.2]])
 wynik_testu= model.predict(test)
